@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VirtualDJ_Database Version="8.5">
+ <Song FilePath="D:/Les Négresses Vertes/Mlah/05 Orane.m4a" FileSize="8266759">
+  <Tags Author="Les Négresses Vertes" Title="Orane" Genre="Alternative Pop" Album="Mlah" TrackNumber="5/14" Year="1989" Bpm="0.521739" Flag="1" />
+  <Infos SongLength="256.763379" LastModified="1671392856" FirstSeen="1666963312" Bitrate="249" Cover="1" />
+  <Scan Version="801" Bpm="0.522018" AltBpm="0.783016" Volume="0.67670" Key="Dm" Flag="32768" />
+  <Poi Pos="8.207097" Type="beatgrid" />
+  <Poi Pos="2.496145" Type="automix" Point="realStart" />
+  <Poi Pos="249.903311" Type="automix" Point="realEnd" />
+  <Poi Pos="9.0" Type="automix" Point="fadeStart" />
+  <Poi Pos="230.70" Type="automix" Point="fadeEnd" />
+ </Song>
+ <Song FilePath="D:/Seasick Steve/Cheap/01 Cheap.m4a" FileSize="7710153">
+  <Tags Author="Seasick Steve &amp; The Level Devils" Title="Cheap" Genre="Blues" Album="Cheap" TrackNumber="1/12" Year="2004" Bpm="0.451128" Flag="1" />
+  <Infos SongLength="245.176621" LastModified="1671456999" FirstSeen="1667977098" Bitrate="249" Cover="1" />
+  <Scan Version="801" Bpm="0.451723" AltBpm="0.680454" Volume="1.425581" Key="Em" Flag="32768" />
+  <Poi Pos="13.089274" Type="beatgrid" />
+  <Poi Pos="0.605170" Type="automix" Point="realStart" />
+  <Poi Pos="242.470023" Type="automix" Point="realEnd" />
+  <Poi Pos="2.050" Type="automix" Point="fadeStart" />
+  <Poi Pos="241.90" Type="automix" Point="fadeEnd" />
+  <Poi Pos="14.852063" Type="automix" Point="cutStart" />
+  <Poi Pos="239.722086" Type="automix" Point="cutEnd" />
+ </Song>
+ <Song FilePath="D:/10cc/How Dare You!/01 How Dare You.m4a" FileSize="8466497">
+ </Song>
+ <Song FilePath="D:/10cc/How Dare You!/06 Art for Art&apos;s Sake.m4a" FileSize="11855572">
+  <Tags Author="10cc" Title="Art for Art&apos;s Sake" Genre="Pop Rock" Album="How Dare You!" TrackNumber="6/10" Year="1976" Bpm="0.483871" Flag="1" />
+  <Infos SongLength="362.181973" LastModified="1671418756" FirstSeen="1666963304" Bitrate="253" Cover="1" />
+  <Scan Version="801" Bpm="0.483050" AltBpm="0.724626" Volume="1.131294" Key="Dm" Flag="32768" />
+  <Poi Pos="40.986961" Type="beatgrid" />
+  <Poi Pos="0.462948" Type="automix" Point="realStart" />
+  <Poi Pos="356.655601" Type="automix" Point="realEnd" />
+  <Poi Pos="33.450" Type="automix" Point="fadeStart" />
+  <Poi Pos="349.10" Type="automix" Point="fadeEnd" />
+  <Poi Pos="41.448345" Type="automix" Point="cutStart" />
+  <Poi Pos="342.496508" Type="automix" Point="cutEnd" />
+  <Poi Name="Break 1" Pos="149.326077" Type="remix" />
+  <Poi Name="End Break 1" Pos="165.807891" Type="remix" />
+  <Poi Name="Break 2" Pos="187.789206" Type="remix" />
+  <Poi Name="End Break 2" Pos="227.514195" Type="remix" />
+ </Song>
+</VirtualDJ_Database>

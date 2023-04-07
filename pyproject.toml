@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "vdj-tracks"
+version = "0.1.0"
+description = "VirtualDJ track management python tools"
+authors = ["Ilkka Tuohela <hile@iki.fi>"]
+homepage = "https://github.com/hile/vdj-tracks"
+readme = "README.md"
+include = [
+    "LICENSE",
+]
+license = "BSD-3-Clause"
+classifiers = [
+    "Environment :: Console",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX",
+    "Operating System :: Unix",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Utilities",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+cli-toolkit = "^2"
+fs-toolkit = {path = "../fs-toolkit"}
+lxml = "^4.9.2"
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^7"
+flake8 = "^6"
+flake8-bugbear = "^22"
+flake8-quotes = "^3"
+pycodestyle = "^2"
+pyflakes = "^3"
+pylint = "^2"
+pytest = "^7"
+tox = "^4"
+
+[build-system]
+requires = ["poetry-core>=1.3.2"]
+build-backend = "poetry.core.masonry.api"

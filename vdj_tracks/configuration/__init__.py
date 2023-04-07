@@ -1,0 +1,3 @@
+"""
+VirtualDJ configuration
+"""

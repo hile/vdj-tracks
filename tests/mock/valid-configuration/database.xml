@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VirtualDJ_Database Version="8.5">
+ <Song FilePath="/Users/hile/Documents/VirtualDJ/Sampler/Audio/Siren.vdjsample" FileSize="331329" Flag="1">
+  <Tags Bpm="0.542857" Flag="1" />
+  <Infos SongLength="17.371429" LastModified="1659925013" FirstSeen="1610635304" Bitrate="153" Cover="1" />
+  <Scan Version="801" Bpm="0.542857" />
+  <Poi Type="beatgrid" />
+ </Song>
+ <Song FilePath="/Users/hile/Documents/VirtualDJ/Sampler/Audio/Air Horn.vdjsample" FileSize="128221" Flag="1">
+  <Tags Bpm="0.651587" Flag="1" />
+  <Infos SongLength="6.580862" LastModified="1659925013" FirstSeen="1610635304" Bitrate="156" Cover="1" />
+  <Scan Version="801" Bpm="0.651587" />
+  <Poi Pos="0.623464" Type="beatgrid" />
+ </Song>
+</VirtualDJ_Database>

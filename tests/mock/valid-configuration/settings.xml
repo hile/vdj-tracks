@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+	<audioConfig current="Scarlett">
+		<setup name="Scarlett">
+			<audio soundcard="coreaudio://100 (Scarlett 4i4 USB)" leftChannel="3" rightChannel="4" source="master" />
+			<audio soundcard="coreaudio://100 (Scarlett 4i4 USB)" leftChannel="1" rightChannel="2" source="headphones" />
+		</setup>
+		<setup name="Pioneer DDJ-400">
+			<audio soundcard="coreaudio://56 (DDJ-400 Audio Out)" leftChannel="1" rightChannel="2" source="master" />
+			<audio soundcard="coreaudio://56 (DDJ-400 Audio Out)" leftChannel="3" rightChannel="4" source="headphones" />
+		</setup>
+		<setup name="Internal ">
+			<audio soundcard="coreaudio://46 (Built-in Output)" leftChannel="1" rightChannel="2" source="master" />
+			<audio soundcard="coreaudio://46 (Built-in Output)" leftChannel="1" rightChannel="2" source="headphones" />
+		</setup>
+	</audioConfig>
+	<automation>
+		<autoBPMMatch modified="yes">no</autoBPMMatch>
+		<autoPitchLock>no</autoPitchLock>
+		<autoGain>auto</autoGain>
+		<autoKey modified="yes">no</autoKey>
+		<autoCue>skip silence</autoCue>
+		<smartPlay>no</smartPlay>
+		<smartPlayLimitPitchRange>yes</smartPlayLimitPitchRange>
+		<smartCue modified="yes">no</smartCue>
+		<smartLoop>yes</smartLoop>
+		<quantizeLoop>no</quantizeLoop>
+		<quantizeSetCue>no</quantizeSetCue>
+		<globalQuantize>1 beat</globalQuantize>
+		<smartScratch>no</smartScratch>
+		<cueLoopAutoSync>yes</cueLoopAutoSync>
+		<resetPitchOnLoad>no</resetPitchOnLoad>
+		<resetEqOnLoad>no</resetEqOnLoad>
+		<resetStemsOnLoad>Pads</resetStemsOnLoad>
+		<resetFXOnLoad>no</resetFXOnLoad>
+		<resetKeyOnLoad>yes</resetKeyOnLoad>
+		<autoHeadphones>always</autoHeadphones>
+		<pflOnSelect modified="yes">no</pflOnSelect>
+	</automation>
+	<controls>
+		<playMode>play-pause</playMode>
+		<cueMode>cue</cueMode>
+		<hotcueMode>play</hotcueMode>
+		<updateHotCueOnCueCombo>yes</updateHotCueOnCueCombo>
+		<loopBackMode>smart</loopBackMode>
+		<loopAutoMove>yes</loopAutoMove>
+		<loopDefault modified="yes">0.50, 0.250</loopDefault>
+		<loopRollDefault>0.250</loopRollDefault>
+		<beatjump>1.0</beatjump>
+		<eqMode modified="yes">Frequency</eqMode>
+		<eqModeDual>Inner</eqModeDual>
+		<stemsBleedMuteVocal modified="yes">1.0</stemsBleedMuteVocal>
+		<stemsBleedMuteInstru>0.30</stemsBleedMuteInstru>
+		<stemsBleedOnlyVocal>0.0</stemsBleedOnlyVocal>
+		<stemsBleedOnlyInstru>0.0</stemsBleedOnlyInstru>
+		<vinylMode modified="yes">yes</vinylMode>
+		<masterTempo modified="yes">no, no</masterTempo>
+		<pitchRange modified="yes">38.0</pitchRange>
+		<autoPitchRange>yes</autoPitchRange>
+		<pitchResetSpeed>1.0</pitchResetSpeed>
+		<faderStart>no</faderStart>
+		<faderStartStop>no</faderStartStop>
+		<crossfaderCurve>Full</crossfaderCurve>
+		<crossfaderDisable>no</crossfaderDisable>
+		<crossfaderCustom />
+		<crossfaderHamster>no</crossfaderHamster>
+		<effects>Loop Out,Beat Grid,Cut|,Noise,Stems||</effects>
+		<internalPluginLocations>internal://Ableton Link=internal://Ableton Link, internal://EQ10=internal://EQ10, internal://Ducking Echo=internal://Ducking Echo</internalPluginLocations>
+		<masterEffects>Flanger</masterEffects>
+		<mixFx>Echo</mixFx>
+		<pluginBanks>Echo,Flanger,Reverb|Cut,Distortion,Wahwah</pluginBanks>
+		<padsPagesOrder />
+		<padsPagesHidden>dmx, scratchbank, custom, remix points, scratch, sampler, keycue, cueloop, saved loops, manual loop</padsPagesHidden>
+		<sixteenPadsMode modified="yes">Auto</sixteenPadsMode>
+		<padsPagesChanged>deck1-page1=beatjump, deck2-page1=beatjump</padsPagesChanged>
+		<padsSkinIndependent>no</padsSkinIndependent>
+		<loopPadPage modified="yes">0</loopPadPage>
+		<autoSortCues>no</autoSortCues>
+		<keepPlayingPastEnd>no</keepPlayingPastEnd>
+		<keepPlayStatusOnLoadSong>no</keepPlayStatusOnLoadSong>
+		<levelfaderHamster>no</levelfaderHamster>
+	</controls>
+	<skins>
+		<skinWaveformType modified="yes">shapes</skinWaveformType>
+		<skinOverviewType modified="yes">shapes</skinOverviewType>
+		<skinWaveformScratchType modified="yes">shapes</skinWaveformScratchType>
+		<coloredWaveforms modified="yes">per-deck</coloredWaveforms>
+		<waveUseFrequency modified="yes">no</waveUseFrequency>
+		<waveGrayOnKill>yes</waveGrayOnKill>
+		<waveformCenter>Centered</waveformCenter>
+		<skinPlayheadShadow>yes</skinPlayheadShadow>
+		<showGridLines>no</showGridLines>
+		<beatCounterRange>16</beatCounterRange>
+		<rhythmZoom modified="yes">0.246660</rhythmZoom>
+		<scratchZoomVertical modified="yes">0.284376</scratchZoomVertical>
+		<rhythmZoomSaved>0.250</rhythmZoomSaved>
+		<scratchZoomSaved>0.250</scratchZoomSaved>
+		<touchScreenMode>no</touchScreenMode>
+		<multiTouchTwoFingerScroll modified="yes">no</multiTouchTwoFingerScroll>
+		<onScreenKeyboard>Auto</onScreenKeyboard>
+		<skinEmptyButtons>no</skinEmptyButtons>
+		<customButtons>Set FP =set_firstbeat, Start=set_mixpoint &quot;startSound&quot;, , , =</customButtons>
+		<skin3FxLayout modified="yes">yes</skin3FxLayout>
+		<vuMeter>Power</vuMeter>
+		<clockDisplay>24h</clockDisplay>
+		<cueDisplay>name</cueDisplay>
+		<savedLoopDisplay>name</savedLoopDisplay>
+		<displayTime modified="yes">left</displayTime>
+		<keyDisplay modified="yes">Musical</keyDisplay>
+		<cpuMeter>audio</cpuMeter>
+		<hideSongInfo modified="yes">no</hideSongInfo>
+		<tooltip modified="yes">no</tooltip>
+		<tooltipDelay>500</tooltipDelay>
+		<showCoverForDragDrop modified="yes">no</showCoverForDragDrop>
+		<RPM>33 RPM</RPM>
+		<dialogsColorTheme>automatic</dialogsColorTheme>
+		<cleartype>yes</cleartype>
+		<maximized modified="yes">1</maximized>
+		<skin modified="yes">Hella/:Hella</skin>
+		<skinLoaded>Default=Pro, Old=2 Decks, Default/=Pro, Hella/=Hella</skinLoaded>
+		<skinPosition />
+		<skinWindows>
+			<window name="_mainwindow">
+				<idx0 x="0" y="-5" width="3840" height="2135" />
+			</window>
+			<window name="Default/:Pro">
+				<idx1 x="0" y="0" width="0" height="0" />
+			</window>
+		</skinWindows>
+		<skinPanels>!@hotcues_deck1, @custom_deck1, !!@hotcues_deck12, !!@savedloops_top_deck1, !!@timecode_deck1, !@loopadjust_deck1, @loopdefault_deck1, !!@savedloops_deck1, !!@looprec_deck1, !!@loopbuttons_deck1, !!@fxsingle_deck1, @fxsliders_deck1, !@fxknobs_deck1, !!@pads16_deck1, !@loopadjust_deck2, @loopdefault_deck2, !!@savedloops_deck2, !!@looprec_deck2, !!@loopbuttons_deck2, !!@padfavorite_deck1, @padparams_deck1, !@fx6slots_deck1, !@hotcues_deck2, @custom_deck2, !!@hotcues_deck22, !!@savedloops_top_deck2, !!@timecode_deck2, !@padfavorite_deck2, @padparams_deck2, !@fxsingle_deck2, @fxsliders_deck2, !!@fxknobs_deck2, !!@fx6slots_deck2, !!@pads16_deck2, !scratchmixer, audiomixer, !videomixer, !mastermixer</skinPanels>
+		<skinTextzones />
+		<skinSplitState>cover=0.150, sideview=(0.507774), folders=0.179324, info=(0.762686), effects=(1.0), ads=(0.919593), sideview2=0.650, folders2=0.180, info2=0.860, effects2=(1.0), ads2=(0.919506), cover2=0.150, sidelist=(0.478851)</skinSplitState>
+		<skinRacks />
+		<skin6FxLayout>no</skin6FxLayout>
+		<keyboardShowKeymapOverlay>yes</keyboardShowKeymapOverlay>
+		<keyboardKeymapOverlayOnStickyKeys>yes</keyboardKeymapOverlayOnStickyKeys>
+		<dateFormat>yyyy/mm/dd</dateFormat>
+	</skins>
+	<audio>
+		<audioAutoDetect>yes</audioAutoDetect>
+		<exclusiveAudioAccess modified="yes">yes</exclusiveAudioAccess>
+		<splitHeadphones>no</splitHeadphones>
+		<equalizerInHeadphones modified="yes">no</equalizerInHeadphones>
+		<headphonesGain>0.50</headphonesGain>
+		<prelistenOutput>0</prelistenOutput>
+		<boothMicrophone>no</boothMicrophone>
+		<metronomeVolume>2.0</metronomeVolume>
+		<gainSliderIncludesAutoGain>yes</gainSliderIncludesAutoGain>
+		<faderCurve>0.50</faderCurve>
+		<zeroDB modified="yes">-12dB</zeroDB>
+		<rampStartTime>0.0</rampStartTime>
+		<rampStopTime>0.0</rampStopTime>
+		<rampScratchTime>0.10</rampScratchTime>
+		<equalizerFrequencySpread>Default</equalizerFrequencySpread>
+		<equalizerLowFrequency modified="yes">120</equalizerLowFrequency>
+		<equalizerMidFrequency>1700</equalizerMidFrequency>
+		<equalizerHighFrequency>6500</equalizerHighFrequency>
+		<filterDefaultResonance>Default</filterDefaultResonance>
+		<fxProcessing>Pre-fader</fxProcessing>
+	</audio>
+	<video>
+		<useVideoSkin modified="yes">yes</useVideoSkin>
+		<videoSkin>for Live:live</videoSkin>
+		<showVideoSkinOnPreview>yes</showVideoSkinOnPreview>
+		<videoLogo>yes</videoLogo>
+		<videoLogoImage />
+		<videoLogoSize>Medium</videoLogoSize>
+		<videoLogoPosition>Right-Top</videoLogoPosition>
+		<videoCrossfader>Smart</videoCrossfader>
+		<videoVolumeLink>no</videoVolumeLink>
+		<videoTransition modified="yes">Satellite</videoTransition>
+		<videoRandomTransition>no</videoRandomTransition>
+		<videoFx modified="yes">Boom</videoFx>
+		<videoAudioOnlyVisualisation>Shader</videoAudioOnlyVisualisation>
+		<letterBoxing>bars</letterBoxing>
+		<videoFPS>30</videoFPS>
+		<videoMicroFrames>Smart</videoMicroFrames>
+		<videoResampleQuality>Medium</videoResampleQuality>
+		<videoShaderQuality>Auto</videoShaderQuality>
+		<videoUseDXVA>yes</videoUseDXVA>
+		<videoMaxMemory>0</videoMaxMemory>
+		<videoForceFullscreen>0</videoForceFullscreen>
+		<videoDelay>0.0</videoDelay>
+		<videoWindowAlwaysOnTop>yes</videoWindowAlwaysOnTop>
+		<videoWindowPosition />
+		<videoCreateLinkOnDrop>yes</videoCreateLinkOnDrop>
+		<startVideoOnLoad>yes</startVideoOnLoad>
+		<videoDriver>Intel Iris Pro Graphics</videoDriver>
+	</video>
+	<karaoke>
+		<karaokeBackground modified="yes">None</karaokeBackground>
+		<karaokeBackgroundMusic>automix</karaokeBackgroundMusic>
+		<karaokeBackgroundImage />
+		<karaokeBackgroundVolume>0.750</karaokeBackgroundVolume>
+		<karaokeVideoSkin>for Karaoke:karaoke</karaokeVideoSkin>
+		<karaokeSkipSilence>yes</karaokeSkipSilence>
+		<karaokeAutoRemovePlayed>yes</karaokeAutoRemovePlayed>
+		<karaokeDualDeck>no</karaokeDualDeck>
+	</karaoke>
+	<controllers>
+		<mixerOrder>3124</mixerOrder>
+		<controllerTakeoverMode>Pickup</controllerTakeoverMode>
+		<controllerTakeoverModePitch>Pickup</controllerTakeoverModePitch>
+		<touchWheelBackspin>yes</touchWheelBackspin>
+		<touchWheelForwardspin>no</touchWheelForwardspin>
+		<touchWheelSpinThreshold>0.80</touchWheelSpinThreshold>
+		<jogSensitivityScratch>1.0</jogSensitivityScratch>
+		<jogSensitivityCue>0.50</jogSensitivityCue>
+		<jogSensitivityBend>0.050</jogSensitivityBend>
+		<jogVibrationProtection>0</jogVibrationProtection>
+		<motorWheelInstantPlay>yes</motorWheelInstantPlay>
+		<motorWheelInstantStop>yes</motorWheelInstantStop>
+		<motorWheelSmoothPercent>75.0</motorWheelSmoothPercent>
+		<motorWheelLockTime>1.0</motorWheelLockTime>
+		<controllerRefreshRate>0</controllerRefreshRate>
+		<controllerWaveFormZoom>3</controllerWaveFormZoom>
+		<disableBuiltInDefinitions>no</disableBuiltInDefinitions>
+		<createMidiLog>no</createMidiLog>
+		<midiLogLevel>Default</midiLogLevel>
+		<controllersCustomization>
+			<controller name="KEYBOARD" mapper="KEYBOARD - Hella" />
+			<controller name="SIMPLE_MIDI_0_0" mapper="SIMPLE_MIDI_0_0 - custom mapping" />
+			<controller name="Shuffle Express" mapper="Contour Shuffle Express - Hella" deck="default" />
+		</controllersCustomization>
+		<djcButtons />
+		<controllerState />
+		<controllerMenu />
+		<PIDDJ400-FaderStart>No</PIDDJ400-FaderStart>
+		<PIDDJ400-CFReverse>No</PIDDJ400-CFReverse>
+		<PIDDJ400-VUMeters>Channel</PIDDJ400-VUMeters>
+		<PIDDJ400-BackspinLength>Medium</PIDDJ400-BackspinLength>
+	</controllers>
+	<timecode>
+		<timecodeMode>smart</timecodeMode>
+		<timecodeType>AutoDetect</timecodeType>
+		<timecodeLeadInTime>0.0</timecodeLeadInTime>
+		<timecodeAntiSkip>3</timecodeAntiSkip>
+		<timecodeNeedleDropSync>yes</timecodeNeedleDropSync>
+		<timecodePitchSliderIgnoreBend>yes</timecodePitchSliderIgnoreBend>
+		<timecodeSilence>0.20</timecodeSilence>
+		<timecodeCalibrationVolume>1.0</timecodeCalibrationVolume>
+		<timecodeCalibrationPhase>0.0</timecodeCalibrationPhase>
+	</timecode>
+	<sampler>
+		<samplerBank>AUDIO FX</samplerBank>
+		<samplerTriggerMode>on/off</samplerTriggerMode>
+		<samplerDefaultLoopMode>locked</samplerDefaultLoopMode>
+		<samplerForceNbColumns>0</samplerForceNbColumns>
+		<samplerExportLossless modified="yes">yes</samplerExportLossless>
+		<samplerDontSaveSource>no</samplerDontSaveSource>
+		<samplerOutputToTriggerDeck>no</samplerOutputToTriggerDeck>
+		<samplerRootFolder />
+		<samplerOutputDeck>0</samplerOutputDeck>
+		<samplerApplyEffectsOnDeckOutput>no</samplerApplyEffectsOnDeckOutput>
+		<samplerVideoVolumeLink>yes</samplerVideoVolumeLink>
+		<autoSideview>yes</autoSideview>
+		<samplerImageSize>small</samplerImageSize>
+		<samplerHeadphones>yes</samplerHeadphones>
+		<samplerShowEffects>no</samplerShowEffects>
+	</sampler>
+	<browser>
+		<fileFormats>mp3,wav,cda,wma,asf,ogg,m4a,aac,aif,aiff,flac,mpc,ape,weba,opus,vdj,vdjcache,vdjedit,vdjsample,mp4,ogm,ogv,avi,mpg,mpeg,wmv,vob,mov,divx,m4v,mkv,flv,webm,vdjcachev,apng</fileFormats>
+		<rootFoldersLocation>LocalMusic=hidden, OnlineMusic=hidden, Lists=root, Filters=root, CDJExport=hidden, MyMusic=LocalMusic, MyVideos=LocalMusic, MyComputer=LocalMusic, Desktop=LocalMusic, Crates=LocalMusic, iTunes=LocalMusic, Traktor=hidden, RekordBox=hidden, IDJPool=OnlineMusic, VJPro=OnlineMusic, Digitrax=OnlineMusic, Deezer=OnlineMusic, Tidal=OnlineMusic, Xiami=OnlineMusic, SoundCloud=OnlineMusic, Beatport=OnlineMusic, Beatsource=OnlineMusic, Playlists=root, History=Lists, Cloud=Lists, GeniusDJ=Lists, AskTheDJ=Lists, Sampler=Lists, SpotifyPlaylists=Lists, Stems=root</rootFoldersLocation>
+		<iTunesDatabaseFile>/Users/hile/Music/iTunes/iTunes Library.xml</iTunesDatabaseFile>
+		<seratoFolder modified="yes">/Volumes/Music/_Serato_</seratoFolder>
+		<traktorFolder />
+		<importV7Databases>yes</importV7Databases>
+		<ignoreDrives />
+		<readOnly>no</readOnly>
+		<searchInFolder>yes</searchInFolder>
+		<searchInDB>yes</searchInDB>
+		<searchInContentUnlimited>yes</searchInContentUnlimited>
+		<searchInOnlineCatalogs modified="yes">no</searchInOnlineCatalogs>
+		<ContentUnlimitedWhenEmpty>yes</ContentUnlimitedWhenEmpty>
+		<OnlineCatalogsWhenEmpty>yes</OnlineCatalogsWhenEmpty>
+		<ContentUnlimitedCatalogs />
+		<OnlineCatalogs />
+		<showMusic modified="yes">yes</showMusic>
+		<showVideo modified="yes">no</showVideo>
+		<showKaraoke modified="yes">no</showKaraoke>
+		<searchFields modified="yes">23</searchFields>
+		<browserColumns>file=arti(14.66),albu(18.33),trck(4.64),titl(19.58),comm(15.91),leng(3.05),bpm(3.18),key(3.52),year(3.1),genr(8.99),path(5.04)|side=arti(40),titl(40),mix(20)|file(samp)=spla(4),spos(4),titl(88),sedi(4)|file(sbnk)=spla(4),spos(4),titl(40),sgrp(20),svol(16),slen(12),sedi(4)|file(play)=arti(16.58),albu(17.25),titl(31.36),comm(17.86),genr(8.59),bpm(2.73),key(2.98),year(2.65)|side(auto)=arti(27.85),titl(27.85),comm(24.99),leng(7.02),bpm(6.41),plat(5.88)|side(rmix)=mix(100)|side(play)=arti(27.6),titl(32.68),comm(14.29),bpm(5.39),key(6.67),genr(13.37)|file(ask)=msg(60),from(20),askd(20)|file(virt)=arti(26.79),titl(26.79),comm(14.29),leng(10.71),bpm(10.71),key(10.71)|file(hist)=titl(30),arti(30),mix(20),plti(20)</browserColumns>
+		<browserSort>file(sear)=File Path|file=File Path|file(hist)=Play Time|file(play)=Artist|file(virt)=Artist|file(samp)=Original Sort Order</browserSort>
+		<browserGridColumns>file=alba,titl,arti,mix,star,bpm,leng|side=alba,titl,arti,mix,star,bpm,leng|side(play)=arti,albu,titl,comm,bpm,leng,alba|file(virt)=ord,alba,arti,albu,titl,comm,bpm,leng|file(play)=alba,titl,arti,mix,star,bpm,leng|side(auto)=alba,titl,arti,mix,star,bpm,leng,key,plat|file(hist)=alba,titl,arti,mix,plti|file(samp)=spla,titl</browserGridColumns>
+		<infoviewColumns>alba,titl,arti,mix,year,albu,genr,comp,bpm,key,leng,Xply,comm,usr1,usr2,trck,dbpm,path</infoviewColumns>
+		<showHorizontalSideList modified="yes">yes</showHorizontalSideList>
+		<lockFolderOrder>no</lockFolderOrder>
+		<keepSortOrder>yes</keepSortOrder>
+		<browserSearchByFirstLetter>yes</browserSearchByFirstLetter>
+		<lastSelectedFolder modified="yes">/Volumes/Extras</lastSelectedFolder>
+		<coverFlow>no</coverFlow>
+		<lastTrackListDate modified="yes">2023/03/28</lastTrackListDate>
+		<historyDelay>45</historyDelay>
+		<writeHistory>yes</writeHistory>
+		<prelistenVisible>yes</prelistenVisible>
+		<prelistenStopOnChange modified="yes">no</prelistenStopOnChange>
+		<prelistenStartPos modified="yes">0.50</prelistenStartPos>
+		<autoSearchDB>yes</autoSearchDB>
+		<showZipKaraoke modified="yes">no</showZipKaraoke>
+		<showM3UAsFolders>yes</showM3UAsFolders>
+		<fontSize modified="yes">1.0</fontSize>
+		<browserPadding modified="yes">Small</browserPadding>
+		<browserBPMDigits>1</browserBPMDigits>
+		<savePlaylist>yes</savePlaylist>
+		<saveUnplayedToSidelist modified="yes">yes</saveUnplayedToSidelist>
+		<removePlayedFromSidelist modified="yes">yes</removePlayedFromSidelist>
+		<browserTextFit>smart</browserTextFit>
+		<tracklistFormat>%author - %title</tracklistFormat>
+		<shellIcons>no</shellIcons>
+		<sideviewShortcuts />
+		<sideViewShortcutsHidden>karaoke, sampler, remixes, sidelist, automix</sideViewShortcutsHidden>
+		<sideView modified="yes">/Users/hile/Documents/VirtualDJ/Playlists/Sidelist mess.m3u</sideView>
+		<gridView modified="yes">no</gridView>
+		<triggerPadView>yes</triggerPadView>
+		<sideViewReco modified="yes">similar</sideViewReco>
+		<RemixesViewProvider>iDJPool</RemixesViewProvider>
+		<liveFeedbackProviders modified="yes" />
+		<logUnsuccessfulSearches>no</logUnsuccessfulSearches>
+		<shazam />
+		<filterFolderSplitGenreBySlash>yes</filterFolderSplitGenreBySlash>
+		<browserAutoZoom modified="yes">no</browserAutoZoom>
+		<browserFontSizeButtons>no</browserFontSizeButtons>
+		<browserDaysSongsAreNew>7</browserDaysSongsAreNew>
+		<browserAutoOpenNewDrive modified="yes">no</browserAutoOpenNewDrive>
+		<onlineCatalogsContentPreference>All</onlineCatalogsContentPreference>
+		<cdjExportStemsConfig>Acapella=vocals, Instrumental=instru+bass+kick+hihat, Melody=instru+bass, Beat=kick+hihat</cdjExportStemsConfig>
+		<cdjExportStems>Acapella</cdjExportStems>
+		<cdjExportCompatibility>CDJ2000</cdjExportCompatibility>
+		<cdjExportShowAllDrives>no</cdjExportShowAllDrives>
+		<cdjExportAutoSyncCues>Full</cdjExportAutoSyncCues>
+		<quickFilters />
+		<colorRules />
+		<user1FieldName>User 1</user1FieldName>
+		<user2FieldName>User 2</user2FieldName>
+		<favoriteGenres />
+		<favoriteTags1>hit, crowd pleaser, early night, late night, popular, high energy</favoriteTags1>
+		<favoriteTags2>wedding, birthday, kids, bar mitzvah, church, underground</favoriteTags2>
+		<rememberRecurse modified="yes">yes</rememberRecurse>
+		<cdjExportCuesAsMemoryPoints>no</cdjExportCuesAsMemoryPoints>
+		<rekordboxFolder />
+	</browser>
+	<tags>
+		<getTagsAuto>yes</getTagsAuto>
+		<setTagsAuto modified="yes">yes</setTagsAuto>
+		<coverDownload>exact</coverDownload>
+		<getTitleFromTags>yes</getTitleFromTags>
+		<getRatingFromTags>no</getRatingFromTags>
+		<getCommentFromTags>yes</getCommentFromTags>
+		<getCuesFromTags>for new files</getCuesFromTags>
+		<getTagFromZip>yes</getTagFromZip>
+		<getRemixWhenParsingFilenames modified="yes">no</getRemixWhenParsingFilenames>
+		<useKeyFromTag>no</useKeyFromTag>
+		<cleanTagsInDeckDisplay>yes</cleanTagsInDeckDisplay>
+	</tags>
+	<automix>
+		<automixMode modified="yes">radio</automixMode>
+		<fadeLength>4.0</fadeLength>
+		<automixRepeat>no</automixRepeat>
+		<automixAutoRemovePlayed>no</automixAutoRemovePlayed>
+		<automixDualDeck>no</automixDualDeck>
+		<autoMixBeatMatchOnFade>yes</autoMixBeatMatchOnFade>
+		<automixSkipLength>4.0</automixSkipLength>
+		<automixMaxLength>0</automixMaxLength>
+		<automixDoubleClick>mix now</automixDoubleClick>
+	</automix>
+	<internet>
+		<internetProxyURL />
+		<internetProxyPort />
+		<internetProxyUsername />
+		<internetProxyPassword />
+		<internetLogin modified="yes">hile@iki.fi</internetLogin>
+		<stayLoggedIn>yes</stayLoggedIn>
+		<dontLogin>no</dontLogin>
+		<oneTimeMsg>0</oneTimeMsg>
+		<checkUpdates>yes</checkUpdates>
+		<earlyAccessUpdates>no</earlyAccessUpdates>
+		<sendHistory>yes</sendHistory>
+		<sendAnonymousStats>yes</sendAnonymousStats>
+		<autoRefreshDRM>yes</autoRefreshDRM>
+		<liveFeedback modified="yes">no</liveFeedback>
+		<usageStats>Gpu: Intel Iris Pro Graphics</usageStats>
+		<netsearchVideoQuality>hd720</netsearchVideoQuality>
+		<xiamiLogin />
+		<deezerAccessCode modified="yes">frxTSdsZTOTa1GGF31OiPSijvTn1CxkomEFangJBreI1Xf6gVs</deezerAccessCode>
+		<deezerLoginStatus modified="yes">0</deezerLoginStatus>
+		<soundcloudAccessCode />
+		<soundcloudRefreshCode modified="yes">hwuvFPaT4JrzRjDoA8zcvKrxgQBKY8Ou</soundcloudRefreshCode>
+		<soundcloudAccessCode2 modified="yes">aHh3eUpVZ1s8U3yFXndSflFJjHaKYIiPf2pcZnVVbZSO9wsAAA==</soundcloudAccessCode2>
+		<tidalRefreshCode />
+		<iRemote modified="yes">no</iRemote>
+		<iRemoteList />
+		<iRemoteDefaultPort>4243</iRemoteDefaultPort>
+		<vdjRemoteDevices>Hella|D21B, Padtastic|DCA8, Hellasärö|5DE2, iPad|5F20, iPhone|5DE2</vdjRemoteDevices>
+		<os2l>auto</os2l>
+		<os2lDirectIp />
+		<askTheDJMonitoring>folder</askTheDJMonitoring>
+		<askTheDJFrequency>5</askTheDJFrequency>
+		<askTheDJTwitterHashtag />
+		<netsearchAudioQuality>high</netsearchAudioQuality>
+	</internet>
+	<record>
+		<recordFile />
+		<recordFormat>mp3</recordFormat>
+		<recordQuality modified="yes">high</recordQuality>
+		<recordAutoStart>no</recordAutoStart>
+		<recordWaitForSound>yes</recordWaitForSound>
+		<recordOverwrite>change filename</recordOverwrite>
+		<recordAutoSplit>no</recordAutoSplit>
+		<recordWriteCueFile>no</recordWriteCueFile>
+		<recordVideoResolution>852x480</recordVideoResolution>
+		<recordMicrophone>yes</recordMicrophone>
+		<recordBitDepth>16-bit</recordBitDepth>
+		<recordVideoFps>30</recordVideoFps>
+		<recordVideoHardwareAcceleration>Automatic</recordVideoHardwareAcceleration>
+	</record>
+	<broadcast>
+		<broadcastMode>direct</broadcastMode>
+		<broadcastVideoQuality>mid</broadcastVideoQuality>
+		<broadcastVideoQualityCustom />
+		<broadcastServers>
+			<server name="default" protocol="1" format="1" bitrate="128" />
+		</broadcastServers>
+		<broadcastServer>default</broadcastServer>
+		<broadcastDirectFormat modified="yes">ogg</broadcastDirectFormat>
+		<broadcastDirectPort>8000</broadcastDirectPort>
+		<broadcastDirectQuality modified="yes">high</broadcastDirectQuality>
+		<broadcastDirectMaxClients>64</broadcastDirectMaxClients>
+		<broadcastDirectName />
+		<broadcastSongInfo>yes</broadcastSongInfo>
+		<broadcastSongInfoFormat>%artist - %titleremix</broadcastSongInfoFormat>
+		<podcastName>My VirtualDJ Mix</podcastName>
+		<broadcastVideoProvider>0</broadcastVideoProvider>
+		<broadcastVideoURL />
+		<broadcastVideoKey />
+	</broadcast>
+	<options>
+		<language>English</language>
+		<loadSecurity>on</loadSecurity>
+		<endOfSongWarning>30</endOfSongWarning>
+		<autoDiscMarker>no</autoDiscMarker>
+		<sandboxSplitHeadphones>yes</sandboxSplitHeadphones>
+		<sandboxPreviewOnly>no</sandboxPreviewOnly>
+		<VDJScriptGlobalVariables>$colorscheme=0=0.00000, $jogtype=1818584692=0.00000, $jogcoverart=0=0.00000, $4decks=0=0.00000, $decklayout=0=2.00000, $waveformpos=0=0.00000, $phrasecircle=0=0.00000, $4waveforms=0=0.00000, $4mixer=0=0.00000, $spinner=1=2.00000, $cfassign=0=0.00000, $horizontalwaveforms=0=0.00000, $cueinfo=1818584692=2.00000</VDJScriptGlobalVariables>
+		<crashGuard>yes</crashGuard>
+		<crashReportLevel>0</crashReportLevel>
+		<poiEditorShowAll modified="yes">yes</poiEditorShowAll>
+		<poiEditorSnap modified="yes">no</poiEditorSnap>
+		<database>1610635303</database>
+		<lastUsedBuild>7482</lastUsedBuild>
+		<lastUse modified="yes">1680058756</lastUse>
+		<timestamp>3873</timestamp>
+		<nonColoredPoi>Default</nonColoredPoi>
+		<colorPicker>auto</colorPicker>
+		<colorPickersystemCustom />
+		<lightShowProgram>Auto</lightShowProgram>
+		<settingPage modified="yes">Mapping</settingPage>
+		<showTutorials modified="yes">no</showTutorials>
+		<shopDemoMode>no</shopDemoMode>
+		<dontShowAgain>eqMode3, customButton, Shuffle Express-detected, backLoop, PIDDJ400-detected, stems2023, eqMode</dontShowAgain>
+		<showTipOfTheDay modified="yes">no</showTipOfTheDay>
+		<tipOfTheDayAlreadySeen>23</tipOfTheDayAlreadySeen>
+		<skinStarterTip>18641</skinStarterTip>
+		<limitedEdition>no</limitedEdition>
+		<startOfDayHour>8</startOfDayHour>
+		<eventSchedule />
+		<autoUpdateFailedCount modified="yes">0</autoUpdateFailedCount>
+		<autoUpdateFailedSvn>0</autoUpdateFailedSvn>
+		<autoUpdateFailedTime />
+		<automaticDatabaseBackupPeriod modified="yes">7</automaticDatabaseBackupPeriod>
+		<databaseBackupLast modified="yes">1680052610</databaseBackupLast>
+		<databaseBackupLocation modified="yes">/Volumes/Music/Backups</databaseBackupLocation>
+		<vstFxFolder modified="yes">/Users/hile/Documents/VirtualDJ/VST</vstFxFolder>
+	</options>
+	<performance>
+		<mathEngine>CPU</mathEngine>
+		<mathEnginePriority>Automatic</mathEnginePriority>
+		<mathEngineNbThreadsOffset>0</mathEngineNbThreadsOffset>
+		<precomputeStems>Create manually</precomputeStems>
+		<skinFPS>30</skinFPS>
+		<sampleRate>44100</sampleRate>
+		<latency>0</latency>
+		<maxPreloadLength>60</maxPreloadLength>
+		<maxStemLength>60</maxStemLength>
+		<pitchQuality modified="yes">4</pitchQuality>
+		<scratchFilterQuality modified="yes">28</scratchFilterQuality>
+		<songLoadPriority modified="yes">low</songLoadPriority>
+		<experimentalBeatAnalyzer modified="yes">yes</experimentalBeatAnalyzer>
+		<experimentalSkinEngine>auto</experimentalSkinEngine>
+		<useLowPowerGPU>yes</useLowPowerGPU>
+		<mathEngineShareGPU>no</mathEngineShareGPU>
+		<experimentalUseMetal>yes</experimentalUseMetal>
+		<experimentalWaveColors>yes</experimentalWaveColors>
+		<analyzeSongsOnView modified="yes">yes</analyzeSongsOnView>
+		<keepBPMonAnalyzerUpdate>no</keepBPMonAnalyzerUpdate>
+		<peakAudioCpu modified="yes">0.199397</peakAudioCpu>
+		<peakAudioCpuStems>0.0</peakAudioCpuStems>
+		<stemsRealtimeSeparation modified="yes">Fully disabled</stemsRealtimeSeparation>
+		<stemsSavedStems modified="yes">Manual</stemsSavedStems>
+		<stemsAllowReducedQuality modified="yes">Ask</stemsAllowReducedQuality>
+		<stemsFix modified="yes">Lower priority</stemsFix>
+		<stemsFixExtra />
+		<stemsHwcap modified="yes">0</stemsHwcap>
+		<skinUseLowPowerGPU>yes</skinUseLowPowerGPU>
+		<useOpengl>no</useOpengl>
+		<stemsSavedFolder />
+		<stemsSpeed>0, 0</stemsSpeed>
+	</performance>
+</settings>
