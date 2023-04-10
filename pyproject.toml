@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "vdj-tracks"
-version = "1.0.0"
+version = "1.0.1"
 description = "VirtualDJ track management python tools"
 authors = ["Ilkka Tuohela <hile@iki.fi>"]
 homepage = "https://github.com/hile/vdj-tracks"
@@ -24,8 +24,8 @@ classifiers = [
 [tool.poetry.dependencies]
 python = "^3.9"
 cli-toolkit = "^2"
-fs-toolkit = {path = "../fs-toolkit"}
 lxml = "^4.9.2"
+fs-toolkit = "^2"
 
 [tool.poetry.group.dev.dependencies]
 coverage = "^7"
