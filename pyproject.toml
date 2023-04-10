@@ -15,16 +15,14 @@ classifiers = [
     "Operating System :: MacOS",
     "Operating System :: POSIX",
     "Operating System :: Unix",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Topic :: Utilities",
 ]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.11"
 cli-toolkit = "^2"
-lxml = "^4.9.2"
+lxml = "^4"
 fs-toolkit = "^2"
 
 [tool.poetry.group.dev.dependencies]
