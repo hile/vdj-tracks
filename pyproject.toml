@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "vdj-tracks"
-version = "0.1.0"
+version = "1.0.0"
 description = "VirtualDJ track management python tools"
 authors = ["Ilkka Tuohela <hile@iki.fi>"]
 homepage = "https://github.com/hile/vdj-tracks"
