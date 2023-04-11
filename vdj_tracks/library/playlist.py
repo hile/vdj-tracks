@@ -3,7 +3,7 @@ VirtualDJ playlist in a library
 """
 from dataclasses import dataclass
 from pathlib import Path
-from typing import TYPE_CHECKING
+from typing import Optional, TYPE_CHECKING
 
 from sys_toolkit.collection import CachedMutableSequence
 from sys_toolkit.textfile import LineTextFile
@@ -22,6 +22,25 @@ class PlaylistTrack:
 
     def __repr__(self) -> str:
         return str(self.path)
+
+    @property
+    def library(self) -> Optional['Library']:
+        """
+        Return library for playlist path.
+
+        This library may be different to playlist library when music is from an
+        external drive library and it may be None when library for track is not
+        attached
+        """
+        return self.playlist.library.loader.application.get_library(self.path)
+
+    @property
+    def relative_path(self) -> Optional[Path]:
+        """
+        Return relative path to local music library
+        """
+        library = self.library
+        return self.path.relative_to(library.path) if library is not None else None
 
 
 # pylint: disable=too-few-public-methods
