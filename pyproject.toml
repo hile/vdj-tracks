@@ -35,6 +35,10 @@ pyflakes = "^3"
 pylint = "^2"
 pytest = "^7"
 tox = "^4"
+ruff = "^0.0.261"
+
+[tool.ruff]
+line-length = 120
 
 [build-system]
 requires = ["poetry-core>=1.5.2"]

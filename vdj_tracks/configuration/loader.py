@@ -40,4 +40,4 @@ class VirtualDJConfigurationDirectory:
         """
         Return the configured Library object matching configuration directory
         """
-        return self.application.get_library(self.path)
+        return self.application.libraries.get_library(self.path)

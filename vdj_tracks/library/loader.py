@@ -1,31 +1,84 @@
 """
 VirtualDJ libraries loader
 """
+from collections.abc import MutableSequence
 from pathlib import Path
-from typing import Dict, List, TYPE_CHECKING
+from typing import List, Optional, Union, TYPE_CHECKING
 
 from fs_toolkit import Mountpoints
-from sys_toolkit.collection import CachedMutableMapping
 
 from ..constants import LIBRARY_FOLDER_NAME
+from .crate import Crate
 from .library import Library
 
 if TYPE_CHECKING:
     from ..application import VirtualDJ
 
 
-class Libraries(CachedMutableMapping):
+class Crates(MutableSequence):
+    """
+    VirtualDJ filesystem crates
+    """
+    application: 'VirtualDJ'
+    __items__: List[Crate]
+
+    def __init__(self, application: 'VirtualDJ') -> None:
+        self.application = application
+        self.__items__ = []
+
+    def __delitem__(self, index: int) -> None:
+        self.__items__.__delitem__(index)
+
+    def __getitem__(self, index: int) -> Crate:
+        return self.__items__.__getitem__(index)
+
+    def __len__(self) -> int:
+        return len(self.__items__)
+
+    def __setitem__(self, index: int, value: Crate) -> None:
+        self.__items__.__setitem__(index, value)
+
+    def insert(self, index: int, value: Crate) -> None:
+        self.__items__.insert(index, value)
+
+    def get_crate(self, value: Union[str, Path]) -> Optional[Crate]:
+        """
+        Get crate by name or path
+        """
+        path = Path(value).expanduser()
+        for crate in self:
+            if crate.path == path or crate.path.stem == value:
+                return crate
+        return None
+
+
+class Libraries(MutableSequence):
     """
     VirtualDJ filesystem libraries
 
     Library folders are detected based on filesystem folders
     """
     application: 'VirtualDJ'
-    __items__: Dict[str, Library]
+    __items__: List[Library]
 
     def __init__(self, application: 'VirtualDJ') -> None:
         self.application = application
-        self.update()
+        self.__items__ = []
+
+    def __delitem__(self, index: int) -> None:
+        self.__items__.__delitem__(index)
+
+    def __getitem__(self, index: int) -> Library:
+        return self.__items__.__getitem__(index)
+
+    def __len__(self) -> int:
+        return len(self.__items__)
+
+    def __setitem__(self, index: int, value: Library) -> None:
+        self.__items__.__setitem__(index, value)
+
+    def insert(self, index: int, value: Library) -> None:
+        self.__items__.insert(index, value)
 
     @property
     def mountpoints(self) -> List[Path]:
@@ -42,24 +95,44 @@ class Libraries(CachedMutableMapping):
                 continue
         return paths
 
-    def update(self) -> None:  # pylint:disable=arguments-differ
+    def load(self) -> None:  # pylint:disable=arguments-differ
         """
-        Detect list of VirtualDJ libraries automatically
+        Initialize list of VirtualDJ libraries automatically
         """
-        self.__start_update__()
-        self.__items__ = {}
-
+        self.__items__ = []
         if self.application.configuration.path.is_dir():
             self.add_library(self.application.configuration.path)
         for mountpoint in self.mountpoints:
             self.add_library(mountpoint.joinpath(LIBRARY_FOLDER_NAME))
-        self.__finish_update__()
 
     def add_library(self, path: Path) -> Library:
         """
         Add library to detected library paths
         """
         library = Library(self, path)
-        self.__items__[str(library.path)] = library
-        self.__loaded__ = True
+        for crate in library.crates:
+            self.application.crates.append(crate)
+        self.append(library)
         return library
+
+    def get_library(self, value: Union[str, Path]) -> Optional[Library]:
+        """
+        Get a library by name or path match
+        """
+        def match(library: Library, value: str, path: Path) -> bool:
+            """
+            Match library by path
+            """
+            if library.path.parent.stem == value:
+                return True
+            try:
+                path.relative_to(library.path.parent)
+                return True
+            except ValueError:
+                return False
+
+        path = Path(value).expanduser()
+        for library in self:
+            if match(library, value, path):
+                return library
+        return None

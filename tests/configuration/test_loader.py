@@ -15,7 +15,7 @@ def test_configuration_loader_properties(vdj) -> None:
     assert vdj.configuration.path.is_dir()
     assert isinstance(vdj.configuration.library, Library)
 
-    library = vdj.libraries[str(vdj.configuration.path)]
+    library = vdj.libraries.get_library(vdj.configuration.path)
     assert len(library.playlists) == MOCK_VALID_CONFIGURATION_PLAYLISTS_COUNT
     for playlist in library.playlists:
         assert isinstance(playlist, Playlist)

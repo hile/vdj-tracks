@@ -26,13 +26,13 @@ class PlaylistTrack:
     @property
     def library(self) -> Optional['Library']:
         """
-        Return library for playlist path.
+        Return library for playlist track path
 
         This library may be different to playlist library when music is from an
         external drive library and it may be None when library for track is not
         attached
         """
-        return self.playlist.library.loader.application.get_library(self.path)
+        return self.playlist.library.loader.get_library(self.path)
 
     @property
     def relative_path(self) -> Optional[Path]:

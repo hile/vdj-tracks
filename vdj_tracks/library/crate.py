@@ -48,6 +48,25 @@ class CrateTrack:
     def __repr__(self) -> str:
         return str(self.path)
 
+    @property
+    def library(self) -> Optional['Library']:
+        """
+        Return library for crate track path
+
+        This library may be different to playlist library when music is from an
+        external drive library and it may be None when library for track is not
+        attached
+        """
+        return self.crate.library.loader.get_library(self.path)
+
+    @property
+    def relative_path(self) -> Optional[Path]:
+        """
+        Return relative path to local music library
+        """
+        library = self.library
+        return self.path.relative_to(library.path) if library is not None else None
+
 
 class Crate(XMLDataFile):
     """
@@ -58,7 +77,7 @@ class Crate(XMLDataFile):
 
     def __init__(self, library: 'Library', path: Path) -> None:
         super().__init__(path)
-        self.libraries = library
+        self.library = library
 
     def __repr__(self) -> str:
         return self.path.stem
